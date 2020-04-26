@@ -1,0 +1,1 @@
+The NLP challenge on Zindi for COVID 19
