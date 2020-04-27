@@ -70,8 +70,10 @@ for sentence in range(0, len(features)):
     processed_features.append(processed_feature)
     
     
-vectorizer = TfidfVectorizer (max_features=2500, min_df=7, max_df=0.8, stop_words=stopwords.words('english'))
-processed_features = vectorizer.fit_transform(processed_features).toarray()    
+vectorizer = TfidfVectorizer(max_features=2500, min_df=7, max_df=0.8, stop_words=stopwords.words('english'))
+processed_features = vectorizer.fit_transform(processed_features).toarray()  
+
+len(processed_features[0])
     
 X_train, X_test, y_train, y_test = train_test_split(processed_features, labels, test_size=0.2, random_state=0)
 
