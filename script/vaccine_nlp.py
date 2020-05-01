@@ -92,7 +92,7 @@ print(accuracy_score(y_test, predictions))
 
 
 '''
-This section
+This section uses the trained model to make predicitons and Outputs the results file for submission
 '''
 #Import the test set
 vac_tweets = pd.read_csv("Test.csv")
